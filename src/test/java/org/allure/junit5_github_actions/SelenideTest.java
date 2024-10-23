@@ -19,6 +19,14 @@ public class SelenideTest {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
+    @BeforeAll
+    static void setupSelenoid() {
+        String selenideUrl = System.getenv("SELENIDE_URL");
+        if (selenideUrl != null && !selenideUrl.isEmpty()) {
+            Configuration.remote = selenideUrl;
+        }
+    }
+
     @Test
     public void testMainPage() {
         Allure.step("Open main page", (step) -> {
