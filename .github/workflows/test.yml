@@ -16,7 +16,7 @@ jobs:
           java-version: 21
 
       - name: Run tests
-        run: SELENIDE_URL="${{ vars.SELENIDE_URL }}" ./gradlew clean test
+        run: ./gradlew clean test
 
       - name: Load test report history
         uses: actions/checkout@v4
