@@ -1,3 +1,3 @@
-[![Run tests](https://github.com/inBrackets/LeetCodeJavaSolutions/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/inBrackets/LeetCodeJavaSolutions/actions/workflows/test.yml)
+[![Run tests](https://github.com/inBrackets/LeetCodeJavaSolutions/actions/workflows/tests.yml/badge.svg)](https://github.com/inBrackets/LeetCodeJavaSolutions/actions/workflows/tests.yml)
 
 See full report: [Full report](https://inbrackets.github.io/LeetCodeJavaSolutions/)
