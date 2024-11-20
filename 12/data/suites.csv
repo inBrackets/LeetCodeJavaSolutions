@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Nov 20 23:25:15 GMT 2024","Wed Nov 20 23:25:15 GMT 2024","13","","org.example.CalculatorTest","","org.example.CalculatorTest","subtract_returnsDifference","subtract_returnsDifference()",""
+"passed","Wed Nov 20 23:25:15 GMT 2024","Wed Nov 20 23:25:15 GMT 2024","1","","org.example.CalculatorTest","","org.example.CalculatorTest","add_returnsSum","add_returnsSum()",""
+"passed","Wed Nov 20 23:25:15 GMT 2024","Wed Nov 20 23:25:15 GMT 2024","18","","org.allure.junit5_github_actions.StepTest","","org.allure.junit5_github_actions.StepTest","annotatedStepTest","annotatedStepTest()",""
+"passed","Wed Nov 20 23:25:15 GMT 2024","Wed Nov 20 23:25:15 GMT 2024","30","","org.allure.junit5_github_actions.StepTest","","org.allure.junit5_github_actions.StepTest","lambdaStepTest","lambdaStepTest()",""
