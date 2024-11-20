@@ -16,7 +16,6 @@ version = '1.0-SNAPSHOT'
 def allureVersion = '2.29.0'
 def aspectJVersion = '1.9.22'
 def junitVersion = '5.11.3'
-def selenideVersion = '7.5.1'
 def slf4jVersion = '2.0.16'
 
 java {
