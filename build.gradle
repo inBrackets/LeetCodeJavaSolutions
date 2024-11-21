@@ -17,6 +17,7 @@ def allureVersion = '2.29.0'
 def aspectJVersion = '1.9.22'
 def junitVersion = '5.11.3'
 def slf4jVersion = '2.0.16'
+def lombokVersion = '1.18.36'
 
 java {
     toolchain {
@@ -40,14 +41,29 @@ dependencies {
     agent "org.aspectj:aspectjweaver:$aspectJVersion"
 
     testImplementation "org.slf4j:slf4j-simple:$slf4jVersion"
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+
+    // AspectJ Agent for weaving
+    agent "org.aspectj:aspectjweaver:$aspectJVersion"
+
+    // SLF4J Simple implementation for logging
+    implementation "org.slf4j:slf4j-simple:$slf4jVersion"
+
+    // Lombok for annotation processing
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+
+    // Lombok in tests
+    testCompileOnly "org.projectlombok:lombok:$lombokVersion"
+    testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"
 
     testImplementation platform("org.junit:junit-bom:$junitVersion")
+    testImplementation "org.junit.jupiter:junit-jupiter-params"
     testImplementation "org.junit.jupiter:junit-jupiter-api"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine"
 
     testImplementation platform("io.qameta.allure:allure-bom:$allureVersion")
     testImplementation 'io.qameta.allure:allure-junit5'
-    testImplementation 'io.qameta.allure:allure-selenide'
 }
 
 test {
