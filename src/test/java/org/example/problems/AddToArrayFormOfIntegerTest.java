@@ -1,7 +1,5 @@
 package org.example.problems;
 
-import org.example.Calculator;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -26,18 +24,6 @@ class AddToArrayFormOfIntegerTest extends AbstractTest {
     void testAddToArrayForm_89ms(int[] num, int k, List<Integer> output) {
         assertEquals(output, base.addToArrayForm_2ms(num, k));
     }
-//////////////////////
-    private final Calculator calculator;
-
-    public AddToArrayFormOfIntegerTest() {
-        this.calculator = new Calculator();
-    }
-
-    @Test
-    void subtract_returnsDifference() {
-        assertEquals(calculator.subtract(2, 1), 1);
-    }
-///////////////////////////
 
     public Stream<Arguments> generateTestData() {
         return Stream.of(
