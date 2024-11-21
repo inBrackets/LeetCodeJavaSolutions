@@ -1,4 +1,4 @@
-name: Run tests and publish the report
+name: Run tests
 on: [push]
 
 permissions: write-all
