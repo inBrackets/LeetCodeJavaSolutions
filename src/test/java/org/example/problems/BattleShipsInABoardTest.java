@@ -1,13 +1,18 @@
 package org.example.problems;
 
+import io.qameta.allure.TmsLink;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
+import static org.example.extensions.TestTags.MEDIUM;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@Tag(MEDIUM)
+@TmsLink("battleships-in-a-board")
 class BattleShipsInABoardTest extends AbstractTest {
 
     BattleShipsInABoard base = new BattleShipsInABoard();

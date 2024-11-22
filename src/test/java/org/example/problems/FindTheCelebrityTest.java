@@ -1,5 +1,6 @@
 package org.example.problems;
 
+import io.qameta.allure.TmsLink;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
@@ -17,6 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
     @Tag(PREMIUM),
     @Tag(MEDIUM)
 })
+@TmsLink("find-the-celebrity")
 @Disabled("Whole task is broken. TDDO: find on gitghub a working version")
 class FindTheCelebrityTest extends AbstractTest {
 

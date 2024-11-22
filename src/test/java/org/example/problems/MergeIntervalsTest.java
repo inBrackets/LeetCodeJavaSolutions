@@ -1,5 +1,6 @@
 package org.example.problems;
 
+import io.qameta.allure.TmsLink;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -14,6 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Tags({
     @Tag(MEDIUM)
 })
+@TmsLink("merge-intervals")
 class MergeIntervalsTest extends AbstractTest {
 
     MergeIntervals base = new MergeIntervals();

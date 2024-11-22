@@ -1,5 +1,6 @@
 package org.example.problems;
 
+import io.qameta.allure.TmsLink;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -12,8 +13,9 @@ import static org.example.extensions.TestTags.EASY;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Tags({
-    @Tag(EASY)
+        @Tag(EASY)
 })
+@TmsLink("largest-number-at-least-twice-of-others")
 class LargestNumberAtLeastTwiceOfOthersTest extends AbstractTest {
 
     LargestNumberAtLeastTwiceOfOthers base = new LargestNumberAtLeastTwiceOfOthers();
@@ -27,14 +29,14 @@ class LargestNumberAtLeastTwiceOfOthersTest extends AbstractTest {
     @Override
     public Stream<Arguments> generateTestData() {
         return Stream.of(
-            Arguments.of(
-                new int[] {3,6,1,0},
-                1
-            ),
-            Arguments.of(
-                new int[] {3,6,1,0},
-                1
-            )
+                Arguments.of(
+                        new int[]{3, 6, 1, 0},
+                        1
+                ),
+                Arguments.of(
+                        new int[]{3, 6, 1, 0},
+                        1
+                )
         );
     }
 }

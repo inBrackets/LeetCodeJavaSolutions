@@ -1,5 +1,6 @@
 package org.example.problems;
 
+import io.qameta.allure.TmsLink;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -16,6 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
     @Tag(PREMIUM),
     @Tag(HARD)
 })
+@TmsLink("best-meeting-point")
 class BestMeetingPointTest extends AbstractTest {
 
     BestMeetingPoint base = new BestMeetingPoint();

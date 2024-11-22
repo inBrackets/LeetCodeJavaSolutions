@@ -1,5 +1,6 @@
 package org.example.problems;
 
+import io.qameta.allure.TmsLink;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -12,8 +13,9 @@ import static org.example.extensions.TestTags.MEDIUM;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Tags({
-    @Tag(MEDIUM)
+        @Tag(MEDIUM)
 })
+@TmsLink("longest-increasing-subsequence")
 class LongestIncreasingSubsequenceTest extends AbstractTest {
 
     LongestIncreasingSubsequence base = new LongestIncreasingSubsequence();
@@ -27,18 +29,18 @@ class LongestIncreasingSubsequenceTest extends AbstractTest {
     @Override
     public Stream<Arguments> generateTestData() {
         return Stream.of(
-            Arguments.of(
-                new int[] {10,9,2,5,3,7,101,18},
-                4
-            ),
-            Arguments.of(
-                new int[] {0,1,0,3,2,3},
-                4
-            ),
-            Arguments.of(
-                new int[] {7,7,7,7,7,7,7},
-                1
-            )
+                Arguments.of(
+                        new int[]{10, 9, 2, 5, 3, 7, 101, 18},
+                        4
+                ),
+                Arguments.of(
+                        new int[]{0, 1, 0, 3, 2, 3},
+                        4
+                ),
+                Arguments.of(
+                        new int[]{7, 7, 7, 7, 7, 7, 7},
+                        1
+                )
         );
     }
 }

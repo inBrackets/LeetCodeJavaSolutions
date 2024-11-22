@@ -1,5 +1,6 @@
 package org.example.problems;
 
+import io.qameta.allure.TmsLink;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -13,9 +14,10 @@ import static org.example.extensions.TestTags.PREMIUM;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Tags({
-    @Tag(PREMIUM),
-    @Tag(HARD)
+        @Tag(PREMIUM),
+        @Tag(HARD)
 })
+@TmsLink("k-empty-slots")
 class KEmptySlotsTest extends AbstractTest {
 
     KEmptySlots base = new KEmptySlots();
@@ -29,11 +31,11 @@ class KEmptySlotsTest extends AbstractTest {
     @Override
     public Stream<Arguments> generateTestData() {
         return Stream.of(
-            Arguments.of(
-                new int[]{1, 3, 2},
-                2,
-                3
-            )
+                Arguments.of(
+                        new int[]{1, 3, 2},
+                        2,
+                        3
+                )
         );
     }
 }
