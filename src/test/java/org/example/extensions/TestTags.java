@@ -10,6 +10,6 @@ public class TestTags {
     public static final String FAVOURITE = "Favourite";
 
     public static final String ARRAY = "Array";
-    public static final String DEPTH_FIRST_SEARCH = "Depth_First_Search";
+    public static final String DEPTH_FIRST_SEARCH = "DepthFirstSearch";
     public static final String MATH = "Math";
 }
