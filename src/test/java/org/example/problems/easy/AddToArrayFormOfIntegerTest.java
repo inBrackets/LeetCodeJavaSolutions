@@ -1,6 +1,7 @@
-package org.example.problems;
+package org.example.problems.easy;
 
 import io.qameta.allure.TmsLink;
+import org.example.problems.AbstractTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;

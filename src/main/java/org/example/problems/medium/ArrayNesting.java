@@ -1,4 +1,4 @@
-package org.example.problems;
+package org.example.problems.medium;
 
 import java.util.HashSet;
 import java.util.Set;
