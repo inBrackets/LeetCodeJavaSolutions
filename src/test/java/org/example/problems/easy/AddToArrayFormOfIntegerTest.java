@@ -35,7 +35,7 @@ class AddToArrayFormOfIntegerTest extends AbstractTest {
     @ParameterizedTest(name = "Case {index}: num={0}, k={1}, output={2}")
     @MethodSource("generateTestData")
     void testAddToArrayForm_89ms(int[] num, int k, List<Integer> output) {
-        assertEquals(output, base.addToArrayForm_2ms(num, k));
+        assertEquals(output, base.addToArrayForm_89ms(num, k));
     }
 
     public Stream<Arguments> generateTestData() {
