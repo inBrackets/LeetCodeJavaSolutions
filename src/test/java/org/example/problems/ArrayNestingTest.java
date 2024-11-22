@@ -9,11 +9,15 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
+import static org.example.extensions.TestTags.ARRAY;
+import static org.example.extensions.TestTags.DEPTH_FIRST_SEARCH;
 import static org.example.extensions.TestTags.MEDIUM;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Tags({
-        @Tag(MEDIUM)
+        @Tag(MEDIUM),
+        @Tag(ARRAY),
+        @Tag(DEPTH_FIRST_SEARCH)
 })
 @TmsLink("array-nesting")
 class ArrayNestingTest extends AbstractTest {

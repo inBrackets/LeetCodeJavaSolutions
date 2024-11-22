@@ -10,11 +10,15 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static org.example.extensions.TestTags.ARRAY;
 import static org.example.extensions.TestTags.EASY;
+import static org.example.extensions.TestTags.MATH;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Tags({
-        @Tag(EASY)
+        @Tag(EASY),
+        @Tag(ARRAY),
+        @Tag(MATH)
 })
 @TmsLink("add-to-array-form-of-integer")
 class AddToArrayFormOfIntegerTest extends AbstractTest {
