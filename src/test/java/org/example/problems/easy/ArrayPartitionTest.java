@@ -1,6 +1,8 @@
-package org.example.problems;
+package org.example.problems.easy;
 
 import io.qameta.allure.TmsLink;
+import org.example.problems.AbstractTest;
+import org.example.problems.ArrayPartition;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,11 +11,19 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
+import static org.example.extensions.TestTags.ARRAY;
+import static org.example.extensions.TestTags.COUNTING_SORT;
 import static org.example.extensions.TestTags.EASY;
+import static org.example.extensions.TestTags.GREEDY;
+import static org.example.extensions.TestTags.SORTING;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Tags({
-        @Tag(EASY)
+        @Tag(EASY),
+        @Tag(ARRAY),
+        @Tag(GREEDY),
+        @Tag(SORTING),
+        @Tag(COUNTING_SORT)
 })
 @TmsLink("array-partition")
 class ArrayPartitionTest extends AbstractTest {
