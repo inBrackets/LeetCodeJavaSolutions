@@ -1,4 +1,4 @@
-package org.example.problems;
+package org.example.problems.medium;
 
 /**
  * 419. Battleships in a Board

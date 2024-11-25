@@ -2,7 +2,6 @@ package org.example.problems.medium;
 
 import io.qameta.allure.TmsLink;
 import org.example.problems.AbstractTest;
-import org.example.problems.BattleShipsInABoard;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
