@@ -1,4 +1,4 @@
-package org.example.problems;
+package org.example.problems.premium.hard;
 
 /**
  * 296. Best Meeting Point
