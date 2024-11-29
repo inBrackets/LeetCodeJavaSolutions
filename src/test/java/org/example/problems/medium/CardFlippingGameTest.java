@@ -27,13 +27,13 @@ class CardFlippingGameTest extends AbstractTest {
 
     @ParameterizedTest(name = "Case {index}: fronts={0}, backs={1}, output={2}")
     @MethodSource("generateTestData")
-    void testFlipgame_26ms(int[] fronts, int[] backs, int output) {
+    void testFlippingGame_26ms(int[] fronts, int[] backs, int output) {
         assertEquals(output, base.flipgame_26ms(fronts, backs));
     }
 
     @ParameterizedTest(name = "Case {index}: fronts={0}, backs={1}, output={2}")
     @MethodSource("generateTestData")
-    void testFlipgame_6ms(int[] fronts, int[] backs, int output) {
+    void testFlippingGame_6ms(int[] fronts, int[] backs, int output) {
         assertEquals(output, base.flipgame_6ms(fronts, backs));
     }
 
