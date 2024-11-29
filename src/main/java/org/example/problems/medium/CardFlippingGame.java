@@ -1,4 +1,4 @@
-package org.example.problems;
+package org.example.problems.medium;
 
 import java.util.ArrayList;
 import java.util.Collections;
