@@ -12,6 +12,7 @@ public class TestTags {
     public static final String ARRAY = "Array";
     public static final String COUNTING_SORT = "CountingSort";
     public static final String DEPTH_FIRST_SEARCH = "DepthFirstSearch";
+    public static final String DYNAMIC_PROGRAMMING = "DynamicProgramming";
     public static final String GREEDY = "Greedy";
     public static final String HASH_TABLE = "HashTable";
     public static final String MATH = "Math";

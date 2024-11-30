@@ -1,4 +1,4 @@
-package org.example.problems;
+package org.example.problems.medium;
 
 /**
  * 799. Champagne Tower

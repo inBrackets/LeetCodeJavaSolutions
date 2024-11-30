@@ -1,6 +1,7 @@
-package org.example.problems;
+package org.example.problems.medium;
 
 import io.qameta.allure.TmsLink;
+import org.example.problems.AbstractTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,11 +10,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
+import static org.example.extensions.TestTags.DYNAMIC_PROGRAMMING;
 import static org.example.extensions.TestTags.MEDIUM;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Tags({
-    @Tag(MEDIUM)
+        @Tag(MEDIUM),
+        @Tag(DYNAMIC_PROGRAMMING)
 })
 @TmsLink("champagne-tower")
 class ChampagneTowerTest extends AbstractTest {
@@ -29,24 +32,24 @@ class ChampagneTowerTest extends AbstractTest {
     @Override
     public Stream<Arguments> generateTestData() {
         return Stream.of(
-            Arguments.of(
-                1,
-                1,
-                1,
-                0.000
-            ),
-            Arguments.of(
-                2,
-                1,
-                1,
-                0.500
-            ),
-            Arguments.of(
-                100000009,
-                33,
-                17,
-                1.00000
-            )
+                Arguments.of(
+                        1,
+                        1,
+                        1,
+                        0.000
+                ),
+                Arguments.of(
+                        2,
+                        1,
+                        1,
+                        0.500
+                ),
+                Arguments.of(
+                        100000009,
+                        33,
+                        17,
+                        1.00000
+                )
         );
     }
 }
