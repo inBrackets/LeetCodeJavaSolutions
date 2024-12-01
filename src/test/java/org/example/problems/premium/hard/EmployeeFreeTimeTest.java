@@ -1,6 +1,7 @@
-package org.example.problems;
+package org.example.problems.premium.hard;
 
 import io.qameta.allure.TmsLink;
+import org.example.problems.AbstractTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -10,13 +11,17 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static org.example.extensions.TestTags.ARRAY;
 import static org.example.extensions.TestTags.HARD;
 import static org.example.extensions.TestTags.PREMIUM;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.example.extensions.TestTags.SORTING;
 
 @Tags({
     @Tag(PREMIUM),
-    @Tag(HARD)
+    @Tag(HARD),
+        @Tag(ARRAY),
+        @Tag(SORTING)
 })
 @TmsLink("employee-free-time")
 class EmployeeFreeTimeTest extends AbstractTest {

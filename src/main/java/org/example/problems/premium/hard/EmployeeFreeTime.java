@@ -1,4 +1,4 @@
-package org.example.problems;
+package org.example.problems.premium.hard;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -15,6 +15,7 @@ public class TestTags {
     public static final String DYNAMIC_PROGRAMMING = "DynamicProgramming";
     public static final String GREEDY = "Greedy";
     public static final String HASH_TABLE = "HashTable";
+    public static final String HEAP = "Heap"; // (Priority Queue)
     public static final String MATH = "Math";
     public static final String MATRIX = "Matrix";
     public static final String MONOTONIC_STACK = "MonotonicStack";
